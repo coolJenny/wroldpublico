@@ -1,0 +1,1 @@
+json.array! @pediatrics, partial: 'pediatrics/pediatric', as: :pediatric

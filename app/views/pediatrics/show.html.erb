@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @pediatric.uid %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @pediatric.content %>
+</p>
+
+<%= link_to 'Edit', edit_pediatric_path(@pediatric) %> |
+<%= link_to 'Back', pediatrics_path %>

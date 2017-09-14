@@ -1,0 +1,2 @@
+class Pediatric < ApplicationRecord
+end

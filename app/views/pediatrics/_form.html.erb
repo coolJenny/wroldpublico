@@ -1,0 +1,27 @@
+<%= form_for(pediatric) do |f| %>
+  <% if pediatric.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pediatric.errors.count, "error") %> prohibited this pediatric from being saved:</h2>
+
+      <ul>
+      <% pediatric.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uid %>
+    <%= f.number_field :uid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

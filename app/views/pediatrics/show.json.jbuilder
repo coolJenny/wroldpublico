@@ -1,0 +1,1 @@
+json.partial! "pediatrics/pediatric", pediatric: @pediatric
